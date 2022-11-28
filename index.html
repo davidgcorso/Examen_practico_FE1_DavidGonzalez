@@ -4,43 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Sportit</title>
 </head>
 <body>
-    <header>
-        <img src="/img/logo.svg" alt="logo" />
+    <header class="container menu">
+        <img src="/img/logo.svg" alt="logo" class="logo"/>
         <ul>
-            <li>Sports</li>
-            <li>Products</li>
-            <li>About Us</li>
-            <li>Trainning</li>
-            <li>Community</li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Trainning</a></li>
+            <li><a href="#">Community</a></li>
         </ul>
-        <button>Contact</button>
+        <button class="btn purple--btn">Contact</button>
     </header>
     <main>
-        <section>
-        <div>
-            <img src="/img/padel-intro.png" alt="Padel player logo" />
+        <section class="container">
+        <div class="container--img">
+            <img src="/img/padel-intro.png" alt="Padel player logo"  />
         </div>
-        <div>
+        <div class="container--text">
             <h1>LIVE: Follow the Telcel Huawei Mexico Open 2022 for free</h1>
-            <p>The final of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
-            <button>Contact</button>
+            <p class="second-text">The final of the 2022 World Padel Tour season is underway, don't miss out on any of the action!</p>
+            <button class="btn purple--btn  btn--text">Contact</button>
         </div>
         </section>
-        <section>
+        <section class="container">
             <div><h2>What's the different between pros?</h2></div>
             <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id molestias odit neque, eos, dolores recusandae, blanditiis ea perspiciatis dolor tempore esse? Beatae, sed cum. Minus odio fugiat voluptates adipisci nihil?</p></div>
         </section>
-        <section>
-            <article><span>01</span><h3>Track company-wide progress</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur nihil architecto vero eveniet illum animi et possimus suscipit praesentium doloribus, repellat, perspiciatis nam rerum ratione quas eum itaque qui!</p></article>
-            <article><span>02</span><h3>Advance built-in reports</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur nihil architecto vero eveniet illum animi et possimus suscipit praesentium doloribus, repellat, perspiciatis nam rerum ratione quas eum itaque qui!</p></article>
-            <article><span>03</span><h3>Everything you need in one place</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur nihil architecto vero eveniet illum animi et possimus suscipit praesentium doloribus, repellat, perspiciatis nam rerum ratione quas eum itaque qui!</p></article>
-          <!--   aca agregar los demàs articulos apenas esté listo el diseño-->
+        <section class="container">
+            <article><span class="btn purple--btn">01</span><h3>Track company-wide progress</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur nihil architecto vero eveniet illum animi et possimus suscipit praesentium doloribus, repellat, perspiciatis nam rerum ratione quas eum itaque qui!</p></article>
+            <article><span class="btn purple--btn">03</span><h3>Everything you need in one place</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur nihil architecto vero eveniet illum animi et possimus suscipit praesentium doloribus, repellat, perspiciatis nam rerum ratione quas eum itaque qui!</p></article>
+            <article><span class="btn purple--btn">02</span><h3>Advance built-in reports</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequatur nihil architecto vero eveniet illum animi et possimus suscipit praesentium doloribus, repellat, perspiciatis nam rerum ratione quas eum itaque qui!</p></article>
         </section>
-        <section>
-            <h2>Best of the month</h2>
+        
+            <h2 class="container">Best of the month</h2>
+            <section class="container">
             <article>
                 <img src="/img/avatar-sanyo.png" alt="sanyo avatar">
                 <h3>Sanyo</h3>
@@ -62,11 +66,11 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident fuga repellendus obcaecati, quis nulla, perferendis doloremque labore cumque vitae blanditiis, doloribus maiores ratione officia dolorem dolor ullam iure earum error.
                 </p>
             </article>
-            <button>More</button>
+            <button class="btn purple--btn">More</button>
         </section>
         <section>
             <div><h2>Get to know the best teams of the year</h2></div>
-            <div><button>Go for it</button></div>
+            <div><button class="btn gray--btn">Go for it</button></div>
         </section>
     </main>
     <footer>
@@ -90,7 +94,7 @@
         </nav>
         <form>
             <input type="text" placeholder="Input in your inbox..." />
-            <button type="submit">Go</button>
+            <button type="submit" class="btn purple--btn">Go</button>
         </form>
     </section>
         <span>Copyright 2020. All rights reserved</span>
