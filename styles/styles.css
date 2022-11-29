@@ -25,7 +25,8 @@ background-color: var(--main-bg-color);
 .container {
     display:flex;
     justify-content: space-around;
-    margin: 64px;
+    flex-wrap: wrap;
+    margin: 64px 0 64px 0;
     align-items: center;
 }
 .menu ul {
@@ -59,12 +60,13 @@ a:hover {
     float:right;
     margin: 12px 0 12px 12px;
 }
-.btn {
+.btn {   
+        border-radius: 50px;
+    border: none;
+}
+.btn-main {
     width: 134px;
     height: 44px;
-    padding: 10px;
-    border-radius: 50px;
-    border: none;
 }
 .container--img {
     margin-top: 64px;
@@ -97,4 +99,55 @@ align-items: center;
 text-align: right;
 padding: 12px 0 12px 12px;
 margin: 12px 0 12px 12px;
+}
+.purple-white {
+    height: 168px;
+    width:100%;
+    background-color: var(--purple-main-color);
+    color: white;
+    padding: 16px;
+}
+.container--subtitle {
+    width: 450px;
+    height: 88px;
+    padding-left: 96px;
+    font-weight: 700;
+}
+.container--paragraph {
+    width: 450px;
+    height: 88px;
+    font-size:small;
+    font-weight: 500;
+    padding-right: 96px;
+    margin-bottom: 8px;
+}
+.btn-chip {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    align-items: center;
+padding: 10px 25px;
+gap: 10px;
+   
+}
+.chip-article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 23px;
+    width: 500px;
+    height:fit-content;
+    margin: 32px;
+}
+.chip-title {
+    font-weight: 700;
+    align-self: center;
+    color: var(--blue-main-letters);
+}
+.chip-paragraph {
+    font-weight: 500;
+    margin-left: 96px;
+    color: var(--gray-secondary-letters);
+    font-size:small;
 }
