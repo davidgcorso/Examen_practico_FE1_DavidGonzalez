@@ -6,17 +6,12 @@
 :root {
     --main-bg-color: #F5F5F5;
     --purple-main-color: #8B48BF;
-    --purple-hover-color: #b881e1;
+    --purple-secondary-color: #b881e1;
     --lightblue-main-color: #3CDDF3;
     --blue-main-letters: #232851;
     --gray-secondary-letters: #B3B2B7;
-/* footer colors */
     --footer-bg-color: #1E1E26;
-
-
 }
-
-
 body {
 font-family: 'Be Vietnam Pro', sans-serif;
 background-color: var(--main-bg-color);
@@ -26,8 +21,12 @@ background-color: var(--main-bg-color);
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 64px 0 64px 0;
     align-items: center;
+    margin: 80px auto 0;
+}
+/* Navbar */
+.menu {
+    margin: 64px auto;
 }
 .menu ul {
     list-style: none;
@@ -36,27 +35,27 @@ background-color: var(--main-bg-color);
     float:left;
     padding-left: 32px;
 }
-a {
+.menu--a {
     text-decoration: none;
     color: var(--blue-main-letters);
     font-weight: 500;
     font-size: 13px;
     line-height: 19px;
 }
-a:hover {
+.menu--a:hover {
     color: var(--gray-secondary-letters);
 }
+/* Buttons */
 .purple--btn {
     background-color: var(--purple-main-color);
     color: white;
     
 }
 .purple--btn:hover {
-    background-color: var(--purple-hover-color);
+    background-color: var(--purple-secondary-color);
     cursor: pointer;
-
 }
-.btn--text {
+.btn--text1 {
     float:right;
     margin: 12px 0 12px 12px;
 }
@@ -68,6 +67,7 @@ a:hover {
     width: 134px;
     height: 44px;
 }
+/* First section */
 .container--img {
     margin-top: 64px;
     width: 540px;
@@ -105,30 +105,37 @@ margin: 12px 0 12px 12px;
     width:100%;
     background-color: var(--purple-main-color);
     color: white;
-    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
+/* Second section */
 .container--subtitle {
     width: 450px;
     height: 88px;
-    padding-left: 96px;
     font-weight: 700;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .container--paragraph {
     width: 450px;
     height: 88px;
     font-size:small;
     font-weight: 500;
-    padding-right: 96px;
-    margin-bottom: 8px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;  
 }
+/* Third section */
 .btn-chip {
     font-weight: 700;
     font-size: 16px;
     line-height: 23px;
     align-items: center;
 padding: 10px 25px;
-gap: 10px;
-   
+gap: 10px;   
 }
 .chip-article {
     display: flex;
@@ -150,4 +157,114 @@ gap: 10px;
     margin-left: 96px;
     color: var(--gray-secondary-letters);
     font-size:small;
+}
+/* Fourth section */
+.blue-letter {
+    color: var(--blue-main-letters);
+    font-weight: 700;
+    font-size: 40px; 
+    margin: 80px;
+    text-align: center;
+}
+.athlete {
+width: 400px;
+height: 240px;
+text-align: center;
+}
+.avatar {
+    width: 78px;
+    height: 71px;
+    margin: 16px;
+}
+.athlete-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--blue-main-letters);
+    margin-bottom: 16px;
+}
+.athlete-paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--gray-secondary-letters);
+    margin-bottom: 16px;
+}
+.btn--text2 {
+    margin: 48px; 
+}
+/* Gray buton (Last section) */
+.gray--btn {
+    background-color: var(--main-bg-color);
+    color: var(--purple-main-color);
+    font-weight: 500;
+}
+.gray--btn:hover {
+    background-color: white;
+    color: var(--purple-secondary-color);
+    cursor: pointer;
+}
+/* Footer Style */
+.footer {
+    background-color: var(--footer-bg-color);
+    width: 100%;
+    height: 247px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.footer--logo {
+margin:64px auto;
+}
+.footer--icons {
+    margin: 24px auto;
+}
+.footer--icons img {
+    padding-left: 8px;
+}
+.footer--menu  {
+    list-style: none;
+   /*  margin:64px; */
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+}
+.footer--menu ul {
+    list-style: none;
+}
+.footer--menu ul:nth-child(1) {
+    margin-top: 64px;
+}
+.footer--menu ul li {
+    margin-bottom: 16px;
+}
+.footer--link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+}
+.footer--link:hover {
+    color: var(--gray-secondary-letters);
+}
+.footer--newsletter {
+    margin:64px;
+}
+.footer-input {
+    width: 160px;
+    height: 44px;
+    margin-right: 2px;
+}
+.footer--button {
+    width: 64px;
+    height: 44px;
+}
+.footer--copyright {
+    color: var(--gray-secondary-letters);
+    align-self: flex-end;
+    padding-top: 32px;
+    padding-right: 96px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px; 
 }
